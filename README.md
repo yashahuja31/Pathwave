@@ -1,4 +1,4 @@
-# Pathways – Student Education & Immigration Services
+# Pathwave – Student Education & Immigration Services
 ### Coming Soon Page
 
 A premium, minimal coming soon page for **Pathways** — a student immigration consultancy helping Indian students find their path to studying abroad.
