@@ -1,0 +1,14 @@
+.post-hero { background: var(--surface); border-bottom: 1px solid var(--border); padding: 5rem 4rem 4rem; }
+.post-hero-inner { max-width: 800px; margin: 0 auto; }
+.post-back { background: none; border: none; color: var(--silver); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; margin-bottom: 2rem; transition: color 0.3s; font-family: var(--font-body); }
+.post-back:hover { color: var(--gold); }
+.post-title { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 300; line-height: 1.15; margin: 1rem 0 1.5rem; }
+.post-meta { display: flex; align-items: center; gap: 0.8rem; }
+.post-body { max-width: 800px; margin: 0 auto; padding: 4rem 4rem 2rem; }
+.post-para { font-size: 1rem; color: var(--silver); line-height: 1.9; margin-bottom: 1.5rem; }
+.post-h2 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 400; color: var(--white); margin: 3rem 0 1.2rem; padding-top: 1rem; border-top: 1px solid var(--border); }
+.post-cta { text-align: center; padding: 5rem 4rem; background: var(--surface); border-top: 1px solid var(--border); }
+@media (max-width: 768px) {
+  .post-hero { padding: 4rem 1.5rem 3rem; }
+  .post-body { padding: 3rem 1.5rem; }
+}

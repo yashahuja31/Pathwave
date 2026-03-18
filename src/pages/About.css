@@ -1,0 +1,26 @@
+.about-stats-band { display: grid; grid-template-columns: repeat(4,1fr); background: var(--gold); }
+.about-stat { padding: 3rem 2rem; text-align: center; border-right: 1px solid rgba(10,10,15,0.15); }
+.about-stat:last-child { border-right: none; }
+.about-stat-num { font-family: var(--font-display); font-size: 2.5rem; font-weight: 600; color: var(--midnight); line-height: 1; }
+.about-stat-label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(10,10,15,0.7); margin-top: 0.4rem; }
+.team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2rem; margin-top: 4rem; }
+.team-card { background: var(--card); border: 1px solid var(--border); overflow: hidden; transition: border-color 0.3s; }
+.team-card:hover { border-color: var(--gold); }
+.team-avatar { width: 100%; aspect-ratio: 1; background: var(--surface); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 3rem; font-weight: 600; color: var(--gold); position: relative; overflow: hidden; }
+.team-avatar::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 30% 30%, rgba(201,168,76,0.1), transparent 60%); }
+.team-info { padding: 1.5rem; }
+.team-name { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; }
+.team-role { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin: 0.3rem 0 0.7rem; }
+.team-bio { font-size: 0.83rem; color: var(--silver); }
+.values-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 1.5rem; margin-top: 3rem; }
+.value-card { padding: 2.5rem; border: 1px solid var(--border); background: var(--card); transition: border-color 0.3s; }
+.value-card:hover { border-color: var(--gold); }
+.value-icon { font-size: 1.8rem; margin-bottom: 1rem; }
+.value-title { font-family: var(--font-display); font-size: 1.2rem; font-weight: 500; margin-bottom: 0.5rem; }
+.value-desc { font-size: 0.85rem; color: var(--silver); }
+@media (max-width: 900px) {
+  .about-stats-band { grid-template-columns: repeat(2,1fr); }
+  .about-stat { border-right: none; border-bottom: 1px solid rgba(10,10,15,0.15); }
+  .team-grid { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr; }
+}

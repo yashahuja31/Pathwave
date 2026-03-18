@@ -1,0 +1,18 @@
+.contact-tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 0; }
+.contact-tab { padding: 1rem 2.5rem; background: none; border: none; border-bottom: 2px solid transparent; color: var(--silver); font-size: 0.82rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; transition: all 0.3s; margin-bottom: -1px; font-family: var(--font-body); }
+.contact-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
+.contact-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 6rem; align-items: start; padding-top: 4rem; padding-bottom: 5rem; }
+.contact-info-block { display: flex; flex-direction: column; gap: 1.8rem; }
+.contact-item { padding-bottom: 1.8rem; border-bottom: 1px solid var(--border); }
+.contact-item:last-child { border-bottom: none; padding-bottom: 0; }
+.contact-item-label { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+.contact-item-val { font-size: 0.95rem; color: var(--platinum); }
+.form-success { text-align: center; padding: 4rem 3rem; background: var(--card); border: 1px solid var(--gold); }
+.form-success-icon { width: 60px; height: 60px; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold); font-size: 1.5rem; margin: 0 auto 1.5rem; }
+.form-success-title { font-family: var(--font-display); font-size: 1.6rem; font-weight: 500; margin-bottom: 0.8rem; }
+.form-success-sub { color: var(--silver); font-size: 0.9rem; }
+.form-note { font-size: 0.75rem; color: var(--silver); opacity: 0.6; margin-top: -0.5rem; }
+@media (max-width: 900px) {
+  .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .contact-tab { padding: 0.8rem 1.2rem; font-size: 0.75rem; }
+}

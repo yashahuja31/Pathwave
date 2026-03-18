@@ -1,0 +1,6 @@
+.star-rating-group { margin-bottom: 1.5rem; }
+.star-rating-label { font-size: 0.82rem; color: var(--silver); margin-bottom: 0.6rem; }
+.stars { display: flex; gap: 0.3rem; }
+.star { font-size: 1.6rem; background: none; border: none; cursor: pointer; color: rgba(255,255,255,0.1); transition: color 0.15s; padding: 0; line-height: 1; }
+.star.active { color: var(--gold); }
+.star:hover { color: var(--gold-light); }
