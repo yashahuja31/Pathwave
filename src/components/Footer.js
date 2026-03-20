@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="footer-brand">PathWave <span>International</span></div>
           <p className="footer-desc">Your trusted partner for international university admissions, visa support, and study abroad guidance.</p>
           <div className="footer-socials">
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-link">IG</a>
+            <a href="https://www.instagram.com/pathwaveinternational?igsh=cHJuNTFpNXJ6a2sy&utm_source=qr" target="_blank" rel="noreferrer" className="social-link">IG</a>
             <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-link">LI</a>
             <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-link">FB</a>
           </div>
@@ -35,11 +35,11 @@ export default function Footer() {
           <div className="footer-col-title">Offices</div>
           <div className="footer-links">
             <span className="footer-link static">New Delhi (HQ)</span>
-            <span className="footer-link static">Mumbai</span>
+            {/* <span className="footer-link static">Mumbai</span>
             <span className="footer-link static">Bangalore</span>
-            <span className="footer-link static">Dubai</span>
-            <a href="mailto:hello@pathwaveinternational.com" className="footer-link gold">hello@pathwaveinternational.com</a>
-            <a href="tel:+919810000000" className="footer-link">+91 98100 00000</a>
+            <span className="footer-link static">Dubai</span> */}
+            <a href="mailto:info@pathwaveinternational.com" className="footer-link gold">info@pathwaveinternational.com</a>
+            <a href="tel:+919650069340" className="footer-link">+91 96500 69340</a>
           </div>
         </div>
       </div>
