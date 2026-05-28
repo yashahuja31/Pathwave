@@ -30,12 +30,27 @@ export const DESTINATIONS = [
     flag: '🇨🇦',
   },
   {
-    tag: 'Australia & Europe',
-    title: 'Australia & Europe',
-    desc: "Australia's Group of Eight, Germany's low-tuition universities, and the Netherlands' English programs — world-class options at every budget.",
-    features: ['Group of Eight Australia Universities', 'Germany — Low or Zero Tuition Fees', 'Netherlands, France, Ireland & More', 'Full European Student Visa Support'],
-    flag: '🌏',
+    tag: 'Australia',
+    title: 'Australia',
+    desc: "Australia's Group of Eight.",
+    features: ['Group of Eight Australia Universities', 'Post-Graduation Work Permit Up to 3 Yrs', 'Clear PR Pathways via Express Entry', 'Safe, Multicultural & Welcoming Cities'],
+    flag: '🇦🇺',
   },
+
+  {
+    tag: 'Europe',
+    title: 'Study in Europe',
+    desc: "Germany's low-tuition universities, and the Netherlands' English programs — world-class options at every budget.",
+    features: ['Group of All European Universities', 'Germany — Low or Zero Tuition Fees', 'Netherlands, France, Ireland & More', 'Full European Student Visa Support'],
+    flag: '🇪🇺',
+  },
+  {
+    tag: 'Asia',
+    title: 'Study in Asia',
+    desc: 'Top universities in Singapore, Hong Kong, Japan, and South Korea — world-class education with vibrant cultures and strong regional connections.',
+    features: ['NUS, HKU, University of Tokyo & More', 'Post-Graduation Work Visas Available', 'Scholarships Up to 100% Tuition', 'Dynamic Cities & Rich Cultural Experiences'],
+    flag: '🌏',
+  }
 ];
 
 export const TESTIMONIALS = [
@@ -45,9 +60,7 @@ export const TESTIMONIALS = [
 ];
 
 export const TEAM = [
-  { name: 'Sujata Sen Gupta', role: 'Founder & Chief Counsellor', bio: 'Former admissions officer with 15+ years guiding students to universities across the UK, USA, Canada, and Europe.', initial: 'SSG' },
-  { name: 'Manish Sen Gupta', role: 'Head of Marketting and Social Media', bio: 'Oxford alumnus and certified education counsellor with deep networks across Russell Group and European institutions.', initial: 'MSG' },
-  { name: 'Ritesh Sen Gupta', role: 'Head of Brand Dealership', bio: 'Former international student advisor at UCLA, specialising in Ivy League and top-50 US and Canadian admissions.', initial: 'RSG' },
+  { name: 'Mr. Sen Gupta', role: 'Founder & Chief Counsellor', bio: 'Former admissions officer with 15+ years guiding students to universities across the UK, USA, Canada, and Europe.', initial: 'SSG' },
 ];
 
 export const BLOG_POSTS = [
@@ -58,7 +71,7 @@ export const BLOG_POSTS = [
     excerpt: 'The UK Graduate Route visa allows international students to stay and work in the UK for 2 years after completing their degree. Here is a complete guide to eligibility, application, and what to expect.',
     date: 'March 10, 2026',
     readTime: '6 min read',
-    author: 'Sujata Sen Gupta',
+    author: 'Mr. Sen Gupta',
     content: `The UK Graduate Route visa (formerly Post-Study Work Visa) is one of the most valuable benefits of studying in the United Kingdom. Introduced in 2021, it allows international students who have completed a UK degree to remain in the country for two years (three years for PhD graduates) to work or look for work at any skill level.
 
 ## Who is Eligible?
@@ -90,7 +103,7 @@ Interested in studying in the UK? Book a free consultation with our UK specialis
     excerpt: 'Canada offers one of the clearest pathways from student to permanent resident. Here is how Express Entry and the Post-Graduation Work Permit can set you up for life in Canada.',
     date: 'February 28, 2026',
     readTime: '8 min read',
-    author: 'Sujata Sen Gupta',
+    author: 'Mr. Sen Gupta',
     content: `Canada is consistently ranked among the top study destinations for international students — not just for its world-class universities, but for the extraordinary opportunities it offers after graduation. The pathway from international student to Canadian permanent resident is clearer here than almost anywhere else in the world.
 
 ## Step 1: The Post-Graduation Work Permit (PGWP)
@@ -119,7 +132,7 @@ Our Canadian admissions specialists recommend choosing your program and institut
     excerpt: 'Your Statement of Purpose is often the deciding factor between two equally qualified candidates. Our expert coaches share the exact framework we use with every PathWave student.',
     date: 'February 14, 2026',
     readTime: '10 min read',
-    author: 'Jeet',
+    author: 'Rajeev Kumar',
     content: `At PathWave International, we have reviewed and coached thousands of Statements of Purpose. We have seen what separates a forgettable essay from one that wins offers at Oxford, Harvard, and the University of Toronto. Here is our proven framework.
 
 ## The Three Things Every SOP Must Do
@@ -141,9 +154,18 @@ Our Canadian admissions specialists recommend choosing your program and institut
 ## Common Mistakes We See
 
 - Starting with a dictionary definition
+
 - Writing more than 1,000 words when not asked to
+
 - Being vague about career goals
+
 - Focusing too much on past grades rather than future potential
+
+- Using overly formal language that does not reflect your personality
+
+- Relying on AI to write your essay without personal input
+
+- Not tailoring the essay to the specific program and university
 
 Our SOP coaching sessions involve multiple rounds of structured feedback. Book a free consultation to learn more about our admissions support.`,
   },

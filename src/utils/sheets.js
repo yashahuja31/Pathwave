@@ -49,7 +49,7 @@
  */
 
 // ✅ REPLACE THIS with your deployed Apps Script Web App URL:
-const SHEETS_WEBHOOK_URL = 'https://script.google.com/macros/s/YOUR_DEPLOYMENT_ID/exec';
+const SHEETS_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbzYBtyk4MUagMOq68cRnv4qTusZyEibtUR0s_ZZRk_70-jE1RCU7VWD8HCrgvLJOKM0/exec';
 
 /**
  * Submit any form data to Google Sheets via the Apps Script webhook.

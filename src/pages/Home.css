@@ -1,15 +1,15 @@
 /* HERO */
 .hero { min-height: 100vh; display: flex; align-items: center; padding: 10rem 4rem 6rem; position: relative; overflow: hidden; }
-.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(201,168,76,0.08) 0%, transparent 70%), radial-gradient(ellipse 40% 40% at 80% 80%, rgba(201,168,76,0.04) 0%, transparent 60%); pointer-events: none; }
-.hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%); pointer-events: none; }
-.hero-content { position: relative; max-width: 780px; }
+.hero-bg { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(201,168,76,0.08) 0%, transparent 70%), radial-gradient(ellipse 40% 40% at 80% 80%, rgba(201,168,76,0.04) 0%, transparent 60%); pointer-events: none; z-index: 1; }
+.hero-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px); background-size: 60px 60px; mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%); pointer-events: none; z-index: 2; }
+.hero-content { position: relative; max-width: 780px; z-index: 3; }
 .hero-tag { display: inline-flex; align-items: center; gap: 0.7rem; padding: 0.4rem 1rem; border: 1px solid var(--border); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 2.5rem; }
 .hero-tag::before { content: ''; width: 18px; height: 1px; background: var(--gold); }
 .hero-h1 { font-family: var(--font-display); font-size: clamp(3.2rem, 7vw, 6rem); font-weight: 300; line-height: 1.05; margin-bottom: 1.5rem; }
 .hero-h1 em { font-style: italic; color: var(--gold); }
 .hero-sub { font-size: 1.05rem; color: var(--silver); max-width: 520px; margin-bottom: 3rem; font-weight: 300; }
 .hero-actions { display: flex; gap: 1.2rem; flex-wrap: wrap; }
-.hero-stats { position: absolute; right: 4rem; bottom: 6rem; display: flex; flex-direction: column; gap: 2.5rem; }
+.hero-stats { position: absolute; right: 4rem; bottom: 6rem; display: flex; flex-direction: column; gap: 2.5rem; z-index: 3; }
 .stat { text-align: right; }
 .stat-num { font-family: var(--font-display); font-size: 2.8rem; font-weight: 600; color: var(--gold); line-height: 1; }
 .stat-label { font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--silver); margin-top: 0.2rem; }

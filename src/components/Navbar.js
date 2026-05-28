@@ -39,7 +39,7 @@ export default function Navbar() {
           </div>
         ) : (
           <div className="nav-user">
-            <NavLink to="/login" className="nav-link">Student Login</NavLink>
+            {/* <NavLink to="/login" className="nav-link">Student Login</NavLink> */}
             <NavLink to="/contact" className="nav-cta">Free Consultation</NavLink>
           </div>
         )}

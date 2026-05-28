@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
+import ImageScroll from '../components/ImageScroll';
 import { SERVICES, DESTINATIONS, TESTIMONIALS } from '../utils/data';
 import './Home.css';
 
@@ -16,6 +17,7 @@ export default function Home() {
     <PageTransition>
       {/* ── HERO ── */}
       <section className="hero">
+        <ImageScroll />
         <div className="hero-bg" />
         <div className="hero-grid" />
         <div className="hero-content">
