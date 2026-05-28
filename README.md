@@ -49,14 +49,13 @@ src/
 └── pages/
     └── ComingSoon.jsx              # Main page — assembles all components
 ```
->>>>>>> 955175eb393304db0238c5bbdf01eb86840f8286
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-<<<<<<< HEAD
+
 - Node.js v16 or higher
 - npm or yarn
 =======
@@ -177,7 +176,7 @@ const WA_NUMBER = '919810000000'; // Your number with country code
 
 ---
 
-## 🔐 Student Portal
+## 🔐 Student Portal (Future Feature)
 
 The portal uses demo credentials stored in `src/context/AuthContext.js`.
 
@@ -213,7 +212,7 @@ The app will be live at **http://localhost:5173**
 npm run build
 ```
 
-<<<<<<< HEAD
+
 This creates an optimized production build in the `/build` folder, ready to deploy to Vercel, Netlify, or any static host.
 
 ---
@@ -294,12 +293,12 @@ npm install --save-dev gh-pages
 
 npm run build
 npm run deploy
->>>>>>> 955175eb393304db0238c5bbdf01eb86840f8286
+
 ```
 
 ---
 
-<<<<<<< HEAD
+
 © 2026 PathWave International
 =======
 ## 🛠 Tech Stack
@@ -316,9 +315,10 @@ npm run deploy
 
 ## 📄 License
 
-This project is proprietary. Built exclusively for **Pathways – Student Education & Immigration Services**.
+This project is proprietary. Built exclusively for **Pathways – Student Education & Immigration Services**. 
 
 ---
 
 *Built with ❤️ for every Indian student ready to take the leap.*
->>>>>>> 955175eb393304db0238c5bbdf01eb86840f8286
+
+P.S. :- This project is a client work for the Pathwave foundation, there are no fictionaries about this project since the company is all live and in the functioning.
