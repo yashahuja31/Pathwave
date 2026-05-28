@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # PathWave International — React Website
 
 A full multi-page React website for PathWave International, a premium student admissions and study abroad consultancy.
