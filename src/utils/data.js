@@ -60,7 +60,7 @@ export const TESTIMONIALS = [
 ];
 
 export const TEAM = [
-  { name: 'Mr. Sen Gupta', role: 'Founder & Chief Counsellor', bio: 'Former admissions officer with 15+ years guiding students to universities across the UK, USA, Canada, and Europe.', initial: 'SSG' },
+  { name: 'To be announced soon', role: 'Founder & Chief Counsellor', bio: 'To be announced soon', initial: 'TBA' },
 ];
 
 export const BLOG_POSTS = [
