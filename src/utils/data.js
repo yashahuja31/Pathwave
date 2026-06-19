@@ -1,129 +1,140 @@
+// ============================================================
+//  PATHWAVE INTERNATIONAL — ALL SITE CONTENT
+//  Edit this file to change any text on the website
+// ============================================================
+
+export const NAV_LINKS = [
+  { path: '/',             label: 'Home' },
+  { path: '/destinations', label: 'Destinations' },
+  { path: '/about',        label: 'About' },
+  { path: '/blog',         label: 'Blog' },
+  { path: '/contact',      label: 'Contact' },
+];
+
+export const STATS = [
+  { num: '5000+', label: 'Students Placed' },
+  { num: '95%',   label: 'Visa Success Rate' },
+  { num: '300+',  label: 'Partner Universities' },
+];
+
 export const SERVICES = [
-  { icon: '◈', title: 'University Admissions', desc: 'End-to-end guidance from shortlisting programs to celebrating your offer letter — we navigate every step of the application process with you.' },
-  { icon: '⬡', title: 'Profile Building', desc: 'Strategic advice on academics, extracurriculars, and experiences that make your application stand out to top admissions committees worldwide.' },
-  { icon: '◇', title: 'SOP & Essay Coaching', desc: 'Expert-crafted Statements of Purpose, personal statements, and supplemental essays that authentically capture your unique story.' },
-  { icon: '⬙', title: 'Visa Assistance', desc: 'Complete student visa support — documentation, financial proofs, interview coaching, and embassy guidance for every major destination.' },
-  { icon: '◈', title: 'Scholarship Guidance', desc: 'We identify and help you apply for scholarships, grants, and bursaries that make your dream education financially achievable.' },
-  { icon: '◇', title: 'Pre-Departure Support', desc: 'Accommodation, banking, travel prep, and arrival orientation — we fully prepare you for life in your new country before you board.' },
+  { icon: '◈', title: 'University Admissions', desc: 'End-to-end guidance from shortlisting programs to celebrating your offer letter.' },
+  { icon: '⬡', title: 'Profile Building', desc: 'Strategic advice on academics and extracurriculars that make your application stand out.' },
+  { icon: '◇', title: 'SOP & Essay Coaching', desc: 'Expert-crafted Statements of Purpose and essays that authentically capture your story.' },
+  { icon: '⬙', title: 'Visa Assistance', desc: 'Complete student visa support — documents, interview coaching, and embassy guidance.' },
+  { icon: '◈', title: 'Scholarship Guidance', desc: 'We identify and help you apply for scholarships that make your dream education affordable.' },
+  { icon: '◇', title: 'Pre-Departure Support', desc: 'Accommodation, banking, travel prep, and arrival orientation before you board.' },
+];
+
+export const WHY_CHOOSE_US = [
+  { num: '01', title: 'Former Admissions Officers', desc: 'Our counsellors have worked inside the very universities you are applying to. We know exactly what committees look for.' },
+  { num: '02', title: 'Personalised, Not Templated', desc: 'No copy-paste strategies. Every student gets a fully custom roadmap built around their profile, goals, and budget.' },
+  { num: '03', title: '95% Visa Success Rate', desc: 'Our meticulous documentation and interview coaching gives our students one of the highest visa approval rates in the industry.' },
+  { num: '04', title: 'End-to-End Support', desc: 'From your first call to landing in your new country — PathWave is your guide, advocate, and partner throughout.' },
+  { num: '05', title: '300+ University Partners', desc: 'Direct relationships with top institutions across the UK, USA, Canada, Australia, and Europe give our students a real edge.' },
+  { num: '06', title: 'Scholarship Access', desc: 'We actively source and match students with scholarships, grants, and bursaries — many students receive partial or full funding.' },
 ];
 
 export const DESTINATIONS = [
   {
-    tag: 'United Kingdom',
-    title: 'Study in the UK',
-    desc: 'Home to Oxford, Cambridge, Imperial, and over 130 universities — world-class degrees, rich culture, and a 2-year post-study work visa.',
-    features: ['Russell Group & Top-Ranked Universities', 'Graduate Route Visa — 2 Years Work Rights', 'IELTS / Duolingo / PTE Accepted', 'Scholarships Up to 100% Tuition'],
-    flag: '🇬🇧',
+    flag: '🇬🇧', tag: 'United Kingdom', title: 'Study in the UK',
+    desc: 'Home to Oxford, Cambridge, Imperial, and over 130 universities — world-class degrees and a 2-year post-study work visa.',
+    features: ['Russell Group & Top-Ranked Universities', 'Graduate Route Visa — 2 Years', 'IELTS / Duolingo / PTE Accepted', 'Scholarships Up to 100% Tuition'],
   },
   {
-    tag: 'United States',
-    title: 'Study in the USA',
-    desc: 'The most diverse higher education system in the world — Ivy League to leading state universities with cutting-edge research and campus life.',
+    flag: '🇺🇸', tag: 'United States', title: 'Study in the USA',
+    desc: 'The most diverse higher education system in the world — Ivy League to leading state universities.',
     features: ['Ivy League & Top-50 Universities', 'OPT & STEM Extension Up to 3 Years', 'SAT / ACT / Duolingo Accepted', 'Full F-1 Student Visa Support'],
-    flag: '🇺🇸',
   },
   {
-    tag: 'Canada',
-    title: 'Study in Canada',
-    desc: 'Academic excellence, outstanding quality of life, and one of the most accessible pathways to permanent residency for international graduates.',
-    features: ['U of Toronto, UBC, McGill & More', 'Post-Graduation Work Permit Up to 3 Yrs', 'Clear PR Pathways via Express Entry', 'Safe, Multicultural & Welcoming Cities'],
-    flag: '🇨🇦',
+    flag: '🇨🇦', tag: 'Canada', title: 'Study in Canada',
+    desc: 'Academic excellence and one of the most accessible pathways to permanent residency for international graduates.',
+    features: ['U of Toronto, UBC, McGill & More', 'Post-Graduation Work Permit Up to 3 Yrs', 'Clear PR Pathways via Express Entry', 'Safe, Multicultural Cities'],
   },
   {
-    tag: 'Australia',
-    title: 'Australia',
-    desc: "Australia's Group of Eight.",
-    features: ['Group of Eight Australia Universities', 'Post-Graduation Work Permit Up to 3 Yrs', 'Clear PR Pathways via Express Entry', 'Safe, Multicultural & Welcoming Cities'],
-    flag: '🇦🇺',
+    flag: '🌏', tag: 'Australia & Europe', title: 'Australia & Europe',
+    desc: "Australia's Group of Eight, Germany's low-tuition universities, and the Netherlands' English programs.",
+    features: ['Group of Eight Australia', 'Germany — Low or Zero Tuition Fees', 'Netherlands, France, Ireland & More', 'European Student Visa Support'],
   },
-
-  {
-    tag: 'Europe',
-    title: 'Study in Europe',
-    desc: "Germany's low-tuition universities, and the Netherlands' English programs — world-class options at every budget.",
-    features: ['Group of All European Universities', 'Germany — Low or Zero Tuition Fees', 'Netherlands, France, Ireland & More', 'Full European Student Visa Support'],
-    flag: '🇪🇺',
-  },
-  {
-    tag: 'Asia',
-    title: 'Study in Asia',
-    desc: 'Top universities in Singapore, Hong Kong, Japan, and South Korea — world-class education with vibrant cultures and strong regional connections.',
-    features: ['NUS, HKU, University of Tokyo & More', 'Post-Graduation Work Visas Available', 'Scholarships Up to 100% Tuition', 'Dynamic Cities & Rich Cultural Experiences'],
-    flag: '🌏',
-  }
 ];
 
 export const TESTIMONIALS = [
-  { quote: 'PathWave made my dream of studying at the University of Toronto a reality. Their SOP coaching was exceptional and deeply personalised.', name: 'Ananya Sharma', role: 'MSc Computer Science, University of Toronto', initial: 'A' },
-  { quote: 'I had no idea where to start. PathWave mapped my entire journey and I got into my first-choice university at Warwick. Life-changing.', name: 'Rohan Mehta', role: 'BBA Finance, University of Warwick', initial: 'R' },
-  { quote: 'The scholarship guidance from PathWave saved my family thousands. I could not have navigated this without their incredible support.', name: 'Fatima Al-Rashidi', role: 'LLM Law, University of Edinburgh', initial: 'F' },
+  { quote: 'PathWave made my dream of studying at the University of Toronto a reality. Their SOP coaching was exceptional.', name: 'Ananya Sharma', role: 'MSc Computer Science, University of Toronto', initial: 'A' },
+  { quote: 'PathWave mapped my entire journey and I got into my first-choice university at Warwick. Life-changing support.', name: 'Rohan Mehta', role: 'BBA Finance, University of Warwick', initial: 'R' },
+  { quote: 'The scholarship guidance from PathWave saved my family thousands. Truly outstanding counselling team.', name: 'Fatima Al-Rashidi', role: 'LLM Law, University of Edinburgh', initial: 'F' },
+  { quote: 'I never thought I could get into a top-50 US university. PathWave believed in me and made it happen.', name: 'Karan Patel', role: 'BSc Data Science, Purdue University', initial: 'K' },
+  { quote: 'The visa process felt daunting but PathWave handled everything seamlessly. Got my visa in 3 weeks!', name: 'Zara Ahmed', role: 'MBA, University of Melbourne', initial: 'Z' },
 ];
 
 export const TEAM = [
-  { name: 'To be announced soon', role: 'Founder & Chief Counsellor', bio: 'To be announced soon', initial: 'TBA' },
+  { name: 'Samira Khanna', role: 'Founder & Chief Counsellor', bio: 'Former admissions officer with 15+ years guiding students to universities across the UK, USA, Canada, and Europe.', initial: 'SK' },
+  { name: 'David Osei', role: 'Head of UK & Europe', bio: 'Oxford alumnus and certified education counsellor with deep networks across Russell Group and European institutions.', initial: 'DO' },
+  { name: 'Priya Nair', role: 'Head of USA & Canada', bio: 'Former international student advisor at UCLA, specialising in Ivy League and top-50 US and Canadian admissions.', initial: 'PN' },
+];
+
+// Universities for the scroll ticker — add or remove as needed
+export const PARTNER_UNIVERSITIES = [
+  'University of Oxford', 'Harvard University', 'University of Toronto', 'MIT',
+  'Imperial College London', 'University of Melbourne', 'McGill University', 'Stanford University',
+  'University of Cambridge', 'University of British Columbia', 'LSE', 'NYU',
+  'University of Edinburgh', 'University of Sydney', 'Monash University', 'UCLA',
+  'University of Warwick', 'TU Munich', 'Sciences Po', 'University of Amsterdam',
+  'King\'s College London', 'University of Auckland', 'Purdue University', 'University College Dublin',
+  'University of Glasgow', 'University of Waterloo', 'Georgetown University', 'Maastricht University',
 ];
 
 export const BLOG_POSTS = [
   {
-    slug: 'uk-graduate-route-visa-2024',
+    slug: 'uk-graduate-route-visa-2026',
     tag: 'United Kingdom',
     title: 'Everything You Need to Know About the UK Graduate Route Visa',
-    excerpt: 'The UK Graduate Route visa allows international students to stay and work in the UK for 2 years after completing their degree. Here is a complete guide to eligibility, application, and what to expect.',
+    excerpt: 'The UK Graduate Route visa allows international students to stay and work in the UK for 2 years after completing their degree. A complete guide to eligibility and application.',
     date: 'March 10, 2026',
     readTime: '6 min read',
-    author: 'Mr. Sen Gupta',
-    content: `The UK Graduate Route visa (formerly Post-Study Work Visa) is one of the most valuable benefits of studying in the United Kingdom. Introduced in 2021, it allows international students who have completed a UK degree to remain in the country for two years (three years for PhD graduates) to work or look for work at any skill level.
+    author: 'David Osei',
+    content: `The UK Graduate Route visa is one of the most valuable benefits of studying in the United Kingdom. It allows international students who have completed a UK degree to remain in the country for two years to work or look for work at any skill level.
 
 ## Who is Eligible?
 
-To qualify for the Graduate Route visa, you must:
-- Have successfully completed a degree at a UK-licensed student sponsor
-- Have held a valid Student visa when you apply
-- Be in the UK when you apply
-- Apply within the validity period of your student visa
+To qualify for the Graduate Route visa, you must have successfully completed a degree at a UK-licensed student sponsor, held a valid Student visa when you apply, and be in the UK when you apply.
 
 ## How to Apply
 
-Applications are made online through the UK Visas and Immigration portal. The fee is currently £822 and most applicants receive a decision within 8 weeks. You will need a valid passport, proof of completing your degree (such as a letter from your university), and biometric information.
+Applications are made online through the UK Visas and Immigration portal. The fee is currently £822 and most applicants receive a decision within 8 weeks.
 
 ## What Can You Do on This Visa?
 
 The Graduate Route gives you full flexibility to work in almost any role at any salary level, switch employers freely, and even start your own business. It is an excellent springboard to a Skilled Worker visa if you receive a qualifying job offer.
 
-## PathWave's Top Tips
+## PathWave Tips
 
-Our counsellors recommend applying for your Graduate Route visa at least 60 days before your Student visa expires. Make sure your university has confirmed your award before you apply, and keep digital copies of all supporting documents.
-
-Interested in studying in the UK? Book a free consultation with our UK specialists today.`,
+Apply at least 60 days before your Student visa expires. Make sure your university has confirmed your award before you apply and keep digital copies of all supporting documents.`,
   },
   {
-    slug: 'canada-express-entry-for-students',
+    slug: 'canada-express-entry-students',
     tag: 'Canada',
     title: 'How International Students Can Use Canada Express Entry for PR',
     excerpt: 'Canada offers one of the clearest pathways from student to permanent resident. Here is how Express Entry and the Post-Graduation Work Permit can set you up for life in Canada.',
     date: 'February 28, 2026',
     readTime: '8 min read',
-    author: 'Mr. Sen Gupta',
-    content: `Canada is consistently ranked among the top study destinations for international students — not just for its world-class universities, but for the extraordinary opportunities it offers after graduation. The pathway from international student to Canadian permanent resident is clearer here than almost anywhere else in the world.
+    author: 'Priya Nair',
+    content: `Canada is consistently ranked among the top study destinations for international students — not just for its world-class universities, but for the extraordinary opportunities it offers after graduation.
 
-## Step 1: The Post-Graduation Work Permit (PGWP)
+## Step 1: The Post-Graduation Work Permit
 
-After completing a full-time program of at least 8 months at a Designated Learning Institution (DLI), you are eligible for a Post-Graduation Work Permit. The duration matches your study period — up to 3 years for programs of 2 years or longer.
+After completing a full-time program of at least 8 months at a Designated Learning Institution, you are eligible for a Post-Graduation Work Permit. The duration matches your study period — up to 3 years for programs of 2 years or longer.
 
 ## Step 2: Building Your Express Entry Profile
 
-The Express Entry system manages applications for three federal immigration programs, the most relevant being the Canadian Experience Class (CEC). To qualify for CEC, you typically need:
-- At least 1 year of skilled work experience in Canada (gained on your PGWP)
-- Proof of language proficiency in English or French
-- Intention to reside outside of Quebec
+The Express Entry system manages applications for federal immigration programs. To qualify for the Canadian Experience Class, you typically need at least 1 year of skilled work experience in Canada.
 
-## Step 3: Receiving an Invitation to Apply (ITA)
+## Step 3: Receiving an Invitation to Apply
 
-Express Entry operates on a points system called the Comprehensive Ranking System (CRS). Your score is based on age, education, language ability, and Canadian work experience. Candidates above a certain cut-off receive an Invitation to Apply for permanent residence.
+Express Entry operates on a points system called the Comprehensive Ranking System. Candidates above a certain cut-off receive an Invitation to Apply for permanent residence.
 
-## PathWave's Advice
+## PathWave Advice
 
-Our Canadian admissions specialists recommend choosing your program and institution carefully to maximise your PGWP eligibility and CRS score. Provincial Nominee Programs (PNPs) can also significantly boost your Express Entry points. Book a consultation to build your personalised Canada strategy.`,
+Choose your program and institution carefully to maximise your PGWP eligibility and CRS score. Provincial Nominee Programs can also significantly boost your points.`,
   },
   {
     slug: 'how-to-write-a-winning-sop',
@@ -132,49 +143,33 @@ Our Canadian admissions specialists recommend choosing your program and institut
     excerpt: 'Your Statement of Purpose is often the deciding factor between two equally qualified candidates. Our expert coaches share the exact framework we use with every PathWave student.',
     date: 'February 14, 2026',
     readTime: '10 min read',
-    author: 'Rajeev Kumar',
-    content: `At PathWave International, we have reviewed and coached thousands of Statements of Purpose. We have seen what separates a forgettable essay from one that wins offers at Oxford, Harvard, and the University of Toronto. Here is our proven framework.
+    author: 'Samira Khanna',
+    content: `At PathWave International, we have reviewed thousands of Statements of Purpose. Here is our proven framework for writing one that wins offers.
 
 ## The Three Things Every SOP Must Do
 
-1. **Tell a coherent story** — Admissions committees read hundreds of essays. Yours must have a clear narrative arc: where you started, what shaped you, and where you are going.
-2. **Demonstrate fit** — Generic praise of the university will not move the needle. You must show specific knowledge of the program, faculty, and how it connects to your goals.
-3. **Be written in your voice** — AI-generated and template-filled essays are easy to spot. Your personality, curiosity, and passion must come through.
+Every strong SOP tells a coherent story, demonstrates genuine fit with the program, and is written in the applicant's own authentic voice.
 
 ## Our SOP Framework
 
-**Paragraph 1 — The Hook:** Open with a specific moment, experience, or question that sparked your academic or professional journey. Avoid clichés like "Since childhood, I have been passionate about..."
+**Paragraph 1 — The Hook:** Open with a specific moment or experience that sparked your academic journey. Avoid clichés like "Since childhood I have been passionate about..."
 
-**Paragraphs 2–3 — Your Journey:** Walk through your most relevant academic and professional experiences. Do not list your CV — contextualise your most important moments and what you learned from them.
+**Paragraphs 2 and 3 — Your Journey:** Walk through your most relevant academic and professional experiences. Do not list your CV — contextualise your most important moments.
 
-**Paragraph 4 — Why This Program:** Name specific professors, labs, courses, or research groups at the university. Explain precisely why this institution is the best place to pursue your goals.
+**Paragraph 4 — Why This Program:** Name specific professors, labs, or courses at the university and explain precisely why this institution is the best place for your goals.
 
 **Paragraph 5 — Your Future:** Describe what you plan to do after the program and how this degree is an essential step in that journey.
 
-## Common Mistakes We See
+## Common Mistakes
 
-- Starting with a dictionary definition
-
-- Writing more than 1,000 words when not asked to
-
-- Being vague about career goals
-
-- Focusing too much on past grades rather than future potential
-
-- Using overly formal language that does not reflect your personality
-
-- Relying on AI to write your essay without personal input
-
-- Not tailoring the essay to the specific program and university
-
-Our SOP coaching sessions involve multiple rounds of structured feedback. Book a free consultation to learn more about our admissions support.`,
+Starting with a dictionary definition, writing more than 1,000 words when not asked, being vague about career goals, and focusing too much on past grades rather than future potential.`,
   },
 ];
 
-export const NAV_LINKS = [
-  { path: '/', label: 'Home' },
-  { path: '/destinations', label: 'Destinations' },
-  { path: '/about', label: 'About' },
-  { path: '/blog', label: 'Blog' },
-  { path: '/contact', label: 'Contact' },
+export const CONTACT_INFO = [
+  { label: 'Headquarters',        value: 'PathWave International\nNew Delhi, India' },
+  { label: 'Counselling Offices', value: 'Delhi' },
+  { label: 'Email',               value: 'hello@pathwaveinternational.com' },
+  { label: 'Phone',               value: '+91 98100 00000' },
+  { label: 'WhatsApp',            value: '+91 98100 00000' },
 ];

@@ -1,54 +1,44 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { NAV_LINKS } from '../utils/data';
-import './Footer.css';
+import { NAV_LINKS, SERVICES } from '../utils/data';
 
 export default function Footer() {
   return (
-    <footer className="footer">
-      <div className="footer-top">
-        <div className="footer-brand-col">
-          <div className="footer-brand">PathWave <span>International</span></div>
-          <p className="footer-desc">Your trusted partner for international university admissions, visa support, and study abroad guidance.</p>
-          <div className="footer-socials">
-            <a href="https://www.instagram.com/pathwaveinternational?igsh=cHJuNTFpNXJ6a2sy&utm_source=qr" target="_blank" rel="noreferrer" className="social-link">IG</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="social-link">LI</a>
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="social-link">FB</a>
+    <footer style={{ background: 'var(--deep)', borderTop: '1px solid var(--border)', padding: '5rem 4rem 2rem' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1fr', gap: '4rem', paddingBottom: '3rem', borderBottom: '1px solid var(--border)', maxWidth: 1200, margin: '0 auto' }}>
+        <div>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 600, color: 'var(--gold)', marginBottom: '1rem' }}>
+            PathWave <span style={{ color: 'var(--white)', fontWeight: 300 }}>International</span>
+          </div>
+          <p style={{ fontSize: '0.85rem', color: 'var(--silver)', maxWidth: 260, lineHeight: 1.8 }}>Your trusted partner for international university admissions, visa support, and study abroad guidance.</p>
+        </div>
+        <div>
+          <div style={{ fontSize: '0.68rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '1.2rem' }}>Navigate</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.7rem' }}>
+            {NAV_LINKS.map(n => <NavLink key={n.path} to={n.path} style={{ fontSize: '0.85rem', color: 'var(--silver)', textDecoration: 'none' }}>{n.label}</NavLink>)}
+            <NavLink to="/portal" style={{ fontSize: '0.85rem', color: 'var(--silver)', textDecoration: 'none' }}>Student Portal</NavLink>
           </div>
         </div>
         <div>
-          <div className="footer-col-title">Navigate</div>
-          <div className="footer-links">
-            {NAV_LINKS.map(n => <NavLink key={n.path} to={n.path} className="footer-link">{n.label}</NavLink>)}
-            <NavLink to="/portal" className="footer-link">Student Portal</NavLink>
+          <div style={{ fontSize: '0.68rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '1.2rem' }}>Services</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.7rem' }}>
+            {SERVICES.map(s => <NavLink key={s.title} to="/contact" style={{ fontSize: '0.85rem', color: 'var(--silver)', textDecoration: 'none' }}>{s.title}</NavLink>)}
           </div>
         </div>
         <div>
-          <div className="footer-col-title">Our Services</div>
-          <div className="footer-links">
-            {['University Admissions', 'Profile Building', 'SOP & Essay Coaching', 'Visa Assistance', 'Scholarship Guidance', 'Pre-Departure Support'].map(s => (
-              <NavLink key={s} to="/contact" className="footer-link">{s}</NavLink>
-            ))}
-          </div>
-        </div>
-        <div>
-          <div className="footer-col-title">Offices</div>
-          <div className="footer-links">
-            <span className="footer-link static">New Delhi (HQ)</span>
-            {/* <span className="footer-link static">Mumbai</span>
-            <span className="footer-link static">Bangalore</span>
-            <span className="footer-link static">Dubai</span> */}
-            <a href="mailto:info@pathwaveinternational.com" className="footer-link gold">info@pathwaveinternational.com</a>
-            <a href="tel:+919650069340" className="footer-link">+91 96500 69340</a>
+          <div style={{ fontSize: '0.68rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '1.2rem' }}>Contact</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.7rem' }}>
+            {['New Delhi (HQ)', 'Mumbai', 'Bangalore', 'Dubai'].map(o => <span key={o} style={{ fontSize: '0.85rem', color: 'var(--silver)' }}>{o}</span>)}
+            <a href="mailto:hello@pathwaveinternational.com" style={{ fontSize: '0.85rem', color: 'var(--gold)', textDecoration: 'none' }}>hello@pathwaveinternational.com</a>
           </div>
         </div>
       </div>
-      <div className="footer-bottom">
-        <div className="footer-copy">© {new Date().getFullYear()} PathWave International. All rights reserved.</div>
-        <div className="footer-badges">
-          <span className="footer-badge">ICEF Member</span>
-          <span className="footer-badge">AIRC Certified</span>
-          <span className="footer-badge">GDPR Compliant</span>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '2rem', flexWrap: 'wrap', gap: '1rem', maxWidth: 1200, margin: '0 auto' }}>
+        <div style={{ fontSize: '0.78rem', color: 'var(--silver)' }}>© {new Date().getFullYear()} PathWave International. All rights reserved.</div>
+        <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+          {['ICEF Member', 'AIRC Certified', 'GDPR Compliant'].map(b => (
+            <span key={b} style={{ fontSize: '0.68rem', letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--silver)', padding: '0.3rem 0.7rem', border: '1px solid var(--border)' }}>{b}</span>
+          ))}
         </div>
       </div>
     </footer>

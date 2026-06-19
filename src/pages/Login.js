@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
 import { useAuth } from '../context/AuthContext';
-import './Login.css';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -13,9 +12,10 @@ export default function Login() {
   const { login } = useAuth();
   const nav = useNavigate();
 
-  const handleSubmit = async e => {
+  const handleSubmit = e => {
     e.preventDefault();
-    setError(''); setLoading(true);
+    setError('');
+    setLoading(true);
     const res = login(email, password);
     setLoading(false);
     if (res.success) nav('/portal');
@@ -24,12 +24,14 @@ export default function Login() {
 
   return (
     <PageTransition>
-      <div className="login-page pt">
-        <motion.div className="login-box"
-          initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-          <div className="login-logo">PathWave <span>International</span></div>
-          <div className="login-subtitle">Student Portal</div>
-          <div className="login-divider" />
+      <div style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '2rem', background: 'radial-gradient(ellipse 60% 60% at 50% 40%, rgba(201,168,76,0.05) 0%, transparent 70%)' }}>
+        <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
+          style={{ width: '100%', maxWidth: 440, background: 'var(--card)', border: '1px solid var(--border)', padding: '3rem' }}>
+          <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.5rem', fontWeight: 600, color: 'var(--gold)', textAlign: 'center' }}>
+            PathWave <span style={{ color: 'var(--white)', fontWeight: 300 }}>International</span>
+          </div>
+          <div style={{ textAlign: 'center', fontSize: '0.75rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--silver)', marginTop: '0.4rem' }}>Student Portal</div>
+          <div style={{ width: 40, height: 1, background: 'var(--gold)', margin: '1.8rem auto' }} />
 
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -46,13 +48,18 @@ export default function Login() {
             </button>
           </form>
 
-          <div className="login-demo-note">
+          <div style={{ marginTop: '1.5rem', padding: '1rem', background: 'var(--surface)', border: '1px solid var(--border)', fontSize: '0.78rem', color: 'var(--silver)', lineHeight: 1.6 }}>
             <strong>Demo credentials:</strong><br />
             student@pathwave.com / student123<br />
             demo@pathwave.com / demo123
           </div>
 
-          <p className="login-footer">Not a PathWave student yet? <button className="login-link" onClick={() => nav('/contact')}>Book a free consultation →</button></p>
+          <p style={{ textAlign: 'center', fontSize: '0.82rem', color: 'var(--silver)', marginTop: '1.5rem' }}>
+            Not a PathWave student yet?{' '}
+            <button onClick={() => nav('/contact')} style={{ background: 'none', border: 'none', color: 'var(--gold)', cursor: 'pointer', fontSize: '0.82rem', fontFamily: 'var(--font-body)' }}>
+              Book a free consultation →
+            </button>
+          </p>
         </motion.div>
       </div>
     </PageTransition>

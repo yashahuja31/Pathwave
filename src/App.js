@@ -28,9 +28,7 @@ function AnimatedRoutes() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/portal" element={
-          <ProtectedRoute><Portal /></ProtectedRoute>
-        } />
+        <Route path="/portal" element={<ProtectedRoute><Portal /></ProtectedRoute>} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
@@ -42,9 +40,7 @@ export default function App() {
     <BrowserRouter>
       <AuthProvider>
         <Navbar />
-        <main>
-          <AnimatedRoutes />
-        </main>
+        <main><AnimatedRoutes /></main>
         <Footer />
         <WhatsAppButton />
       </AuthProvider>
