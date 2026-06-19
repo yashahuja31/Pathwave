@@ -27,8 +27,8 @@ function AnimatedRoutes() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/portal" element={<ProtectedRoute><Portal /></ProtectedRoute>} />
+        {/* <Route path="/login" element={<Login />} /> */}
+        {/* <Route path="/portal" element={<ProtectedRoute><Portal /></ProtectedRoute>} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>
