@@ -52,6 +52,35 @@ export default function Home() {
         <style>{`@media(max-width:900px){ .hero-stats{ display:none !important; } }`}</style>
       </section>
 
+      {/* ── BRAND INTRO ── */}
+      <section className="section" style={{ background: 'var(--surface)', paddingTop: '5rem', paddingBottom: '5rem' }}>
+        <div className="section-inner">
+          <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '3rem', alignItems: 'center' }} className="brand-grid">
+            <motion.div {...inView()} style={{ background: 'var(--card)', border: '1px solid var(--border)', padding: '2.2rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+              <img src="/pathwave-logo.png" alt="PathWave International logo" style={{ maxWidth: '280px', width: '100%', height: 'auto', objectFit: 'contain' }} />
+            </motion.div>
+            <motion.div {...inView(0.08)}>
+              <div className="section-tag">Our Brand</div>
+              <h2 className="section-h2">A trusted guide for students<br /><em>seeking more than admission</em></h2>
+              <p className="section-p" style={{ marginTop: '1.2rem' }}>
+                PathWave International is built on the belief that education should open doors, not create confusion. We help students navigate university applications with clarity, confidence, and a deeply personal approach that goes beyond paperwork.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem', marginTop: '1.6rem' }} className="brand-points-grid">
+                <div style={{ padding: '1rem 1.1rem', border: '1px solid var(--border)', background: 'rgba(255,255,255,0.03)' }}>
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', color: 'var(--gold)', marginBottom: '0.35rem' }}>Human-led guidance</div>
+                  <div style={{ fontSize: '0.84rem', color: 'var(--silver)', lineHeight: 1.7 }}>Every student receives thoughtful support shaped around their goals, strengths, and ambitions.</div>
+                </div>
+                <div style={{ padding: '1rem 1.1rem', border: '1px solid var(--border)', background: 'rgba(255,255,255,0.03)' }}>
+                  <div style={{ fontFamily: 'var(--font-display)', fontSize: '1.05rem', color: 'var(--gold)', marginBottom: '0.35rem' }}>Global perspective</div>
+                  <div style={{ fontSize: '0.84rem', color: 'var(--silver)', lineHeight: 1.7 }}>We connect students with opportunities across leading education systems and future-ready career paths.</div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <style>{`@media(max-width:900px){ .brand-grid{ grid-template-columns:1fr !important; } .brand-points-grid{ grid-template-columns:1fr !important; } }`}</style>
+        </div>
+      </section>
+
       {/* ── DESTINATIONS STRIP ── */}
       <section className="section" style={{ background: 'var(--deep)', paddingTop: '5rem', paddingBottom: '5rem' }}>
         <div className="section-inner">
