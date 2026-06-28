@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // ✏️ Change this to your WhatsApp number (country code + number, no + or spaces)
-const WA_NUMBER = '919810000000';
+const WA_NUMBER = '919650069340';
 const WA_MSG = encodeURIComponent('Hi PathWave International! I would like to book a free consultation.');
 
 export default function WhatsAppButton() {

@@ -29,7 +29,7 @@ export default function Footer() {
           <div style={{ fontSize: '0.68rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '1.2rem' }}>Contact</div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.7rem' }}>
             {['New Delhi (HQ)', 'Mumbai', 'Bangalore', 'Dubai'].map(o => <span key={o} style={{ fontSize: '0.85rem', color: 'var(--silver)' }}>{o}</span>)}
-            <a href="mailto:hello@pathwaveinternational.com" style={{ fontSize: '0.85rem', color: 'var(--gold)', textDecoration: 'none' }}>hello@pathwaveinternational.com</a>
+            <a href="mailto:info@pathwaveinternational.com" style={{ fontSize: '0.85rem', color: 'var(--gold)', textDecoration: 'none' }}>info@pathwaveinternational.com</a>
           </div>
         </div>
       </div>

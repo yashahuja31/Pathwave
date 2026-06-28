@@ -3,10 +3,10 @@ import './ImageScroll.css';
 
 export default function ImageScroll() {
   const images = [
-    'https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1200&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1427504494785-cdff32df91d1?w=1200&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&h=600&fit=crop',
-    'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1200&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80',
+    'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1600&q=80',
+    'https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80',
+    'https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1600&q=80',
   ];
 
   const [current, setCurrent] = useState(0);
@@ -14,9 +14,9 @@ export default function ImageScroll() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent(prev => (prev + 1) % images.length);
-    }, 5000);
+    }, 6000);
     return () => clearInterval(timer);
-  }, []);
+  }, [images.length]);
 
   return (
     <div className="image-scroll">

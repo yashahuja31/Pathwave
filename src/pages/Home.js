@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import PageTransition from '../components/PageTransition';
 import InfoScrollTicker from '../components/InfoScrollTicker';
+import ImageScroll from '../components/ImageScroll';
 import { SERVICES, DESTINATIONS, TESTIMONIALS, STATS, WHY_CHOOSE_US } from '../utils/data';
 
 const inView = (d = 0) => ({ initial: { opacity: 0, y: 24 }, whileInView: { opacity: 1, y: 0 }, viewport: { once: true }, transition: { delay: d, duration: 0.55, ease: [0.22, 1, 0.36, 1] } });
@@ -14,10 +15,11 @@ export default function Home() {
     <PageTransition>
 
       {/* ── HERO ── */}
-      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', padding: '10rem 4rem 6rem', position: 'relative', overflow: 'hidden' }}>
-        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 80% 60% at 60% 40%, rgba(201,168,76,0.08) 0%, transparent 70%)', pointerEvents: 'none' }} />
-        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px)', backgroundSize: '60px 60px', maskImage: 'radial-gradient(ellipse at center,black 40%,transparent 80%)', pointerEvents: 'none' }} />
-        <div style={{ position: 'relative', maxWidth: 780 }}>
+      <section style={{ minHeight: '100vh', display: 'flex', alignItems: 'center', padding: '10rem 4rem 6rem', position: 'relative', overflow: 'hidden', background: 'var(--midnight)' }}>
+        <ImageScroll />
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(ellipse 80% 60% at 60% 40%, rgba(201,168,76,0.08) 0%, transparent 70%)', pointerEvents: 'none', zIndex: 1 }} />
+        <div style={{ position: 'absolute', inset: 0, backgroundImage: 'linear-gradient(rgba(255,255,255,0.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.02) 1px,transparent 1px)', backgroundSize: '60px 60px', maskImage: 'radial-gradient(ellipse at center,black 40%,transparent 80%)', pointerEvents: 'none', zIndex: 2 }} />
+        <div style={{ position: 'relative', maxWidth: 780, zIndex: 3 }}>
           <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
             style={{ display: 'inline-flex', alignItems: 'center', gap: '0.7rem', padding: '0.4rem 1rem', border: '1px solid var(--border)', fontSize: '0.72rem', letterSpacing: '0.2em', textTransform: 'uppercase', color: 'var(--gold)', marginBottom: '2.5rem' }}>
             <span style={{ width: 18, height: 1, background: 'var(--gold)', display: 'block' }} />

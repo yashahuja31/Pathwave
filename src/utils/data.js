@@ -52,9 +52,24 @@ export const DESTINATIONS = [
     features: ['U of Toronto, UBC, McGill & More', 'Post-Graduation Work Permit Up to 3 Yrs', 'Clear PR Pathways via Express Entry', 'Safe, Multicultural Cities'],
   },
   {
-    flag: '🌏', tag: 'Australia & Europe', title: 'Australia & Europe',
-    desc: "Australia's Group of Eight, Germany's low-tuition universities, and the Netherlands' English programs.",
-    features: ['Group of Eight Australia', 'Germany — Low or Zero Tuition Fees', 'Netherlands, France, Ireland & More', 'European Student Visa Support'],
+    flag: '🇦🇺', tag: 'Australia ', title: 'Australia ',
+    desc: "Australia's universities are globally recognised and offer generous post-study work opportunities for international students.",
+    features: ['Group of Eight Australia', 'Post-Study Work Visa Up to 4 Yrs', 'IELTS / PTE / Duolingo Accepted', 'Scholarships & Bursaries Available'],
+  },
+  {
+    flag: '🇪🇺', tag: 'Europe', title: 'Study in Europe',
+    desc: 'From Germany to the Netherlands, Europe offers world-class education, low tuition fees, and vibrant cultural experiences.',
+    features: ['TU9 & Top European Universities', 'Post-Study Work Visas Vary by Country', 'IELTS / Duolingo / Local Language Accepted', 'Affordable Tuition & Living Costs'],
+  },
+  {
+    flag: '🇳🇿', tag: 'New Zealand', title: 'Study in New Zealand',
+    desc: 'A world-class education system with a strong focus on research and innovation.',
+    features: ['University of Auckland', 'University of Otago', 'Massey University', 'Wellington College'],
+  },
+  {
+    flag: '🇸🇬', tag: 'Singapore', title: 'Study in Singapore',
+    desc: 'A vibrant hub for international education with world-class universities and a multicultural environment.',
+    features: ['National University of Singapore', 'Nanyang Technological University', 'Singapore Management University', 'Temasek Polytechnic'],
   },
 ];
 
@@ -169,7 +184,7 @@ Starting with a dictionary definition, writing more than 1,000 words when not as
 export const CONTACT_INFO = [
   { label: 'Headquarters',        value: 'PathWave International\nNew Delhi, India' },
   { label: 'Counselling Offices', value: 'Delhi' },
-  { label: 'Email',               value: 'hello@pathwaveinternational.com' },
-  { label: 'Phone',               value: '+91 98100 00000' },
-  { label: 'WhatsApp',            value: '+91 98100 00000' },
+  { label: 'Email',               value: 'info@pathwaveinternational.com' },
+  { label: 'Phone',               value: '+91 96500 69340' },
+  { label: 'WhatsApp',            value: '+91 96500 69340' },
 ];
